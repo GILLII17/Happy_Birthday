@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Gilli ❤️</title>
+
+<link rel="stylesheet" href="./style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body class="mode-flower">
+
+<!-- ==================================================
+     STAGE 1 — FLOWER BLOOM + CANVAS HEART
+================================================== -->
+<div id="stageFlower">
+<div class="scene">
+<div class="garden">
+
+<div class="flower back-left">
+    <div class="stem"></div>
+    <div class="leaf left-leaf"></div>
+    <div class="leaf right-leaf"></div>
+    <div class="flower-head">
+        <div class="petal" style="--angle:0deg"></div><div class="petal" style="--angle:30deg"></div>
+        <div class="petal" style="--angle:60deg"></div><div class="petal" style="--angle:90deg"></div>
+        <div class="petal" style="--angle:120deg"></div><div class="petal" style="--angle:150deg"></div>
+        <div class="petal" style="--angle:180deg"></div><div class="petal" style="--angle:210deg"></div>
+        <div class="petal" style="--angle:240deg"></div><div class="petal" style="--angle:270deg"></div>
+        <div class="petal" style="--angle:300deg"></div><div class="petal" style="--angle:330deg"></div>
+        <div class="seed-center"></div>
+    </div>
+</div>
+
+<div class="flower left">
+    <div class="stem"></div>
+    <div class="leaf left-leaf"></div>
+    <div class="leaf right-leaf"></div>
+    <div class="flower-head">
+        <div class="petal" style="--angle:0deg"></div><div class="petal" style="--angle:30deg"></div>
+        <div class="petal" style="--angle:60deg"></div><div class="petal" style="--angle:90deg"></div>
+        <div class="petal" style="--angle:120deg"></div><div class="petal" style="--angle:150deg"></div>
+        <div class="petal" style="--angle:180deg"></div><div class="petal" style="--angle:210deg"></div>
+        <div class="petal" style="--angle:240deg"></div><div class="petal" style="--angle:270deg"></div>
+        <div class="petal" style="--angle:300deg"></div><div class="petal" style="--angle:330deg"></div>
+        <div class="seed-center"></div>
+    </div>
+</div>
+
+<div class="flower main">
+    <div class="stem"></div>
+    <div class="leaf left-leaf"></div>
+    <div class="leaf right-leaf"></div>
+    <div class="flower-head">
+        <div class="petal" style="--angle:0deg"></div><div class="petal" style="--angle:30deg"></div>
+        <div class="petal" style="--angle:60deg"></div><div class="petal" style="--angle:90deg"></div>
+        <div class="petal" style="--angle:120deg"></div><div class="petal" style="--angle:150deg"></div>
+        <div class="petal" style="--angle:180deg"></div><div class="petal" style="--angle:210deg"></div>
+        <div class="petal" style="--angle:240deg"></div><div class="petal" style="--angle:270deg"></div>
+        <div class="petal" style="--angle:300deg"></div><div class="petal" style="--angle:330deg"></div>
+        <div class="seed-center"></div>
+    </div>
+</div>
+
+<div class="flower right">
+    <div class="stem"></div>
+    <div class="leaf left-leaf"></div>
+    <div class="leaf right-leaf"></div>
+    <div class="flower-head">
+        <div class="petal" style="--angle:0deg"></div><div class="petal" style="--angle:30deg"></div>
+        <div class="petal" style="--angle:60deg"></div><div class="petal" style="--angle:90deg"></div>
+        <div class="petal" style="--angle:120deg"></div><div class="petal" style="--angle:150deg"></div>
+        <div class="petal" style="--angle:180deg"></div><div class="petal" style="--angle:210deg"></div>
+        <div class="petal" style="--angle:240deg"></div><div class="petal" style="--angle:270deg"></div>
+        <div class="petal" style="--angle:300deg"></div><div class="petal" style="--angle:330deg"></div>
+        <div class="seed-center"></div>
+    </div>
+</div>
+
+<div class="flower back-right">
+    <div class="stem"></div>
+    <div class="leaf left-leaf"></div>
+    <div class="leaf right-leaf"></div>
+    <div class="flower-head">
+        <div class="petal" style="--angle:0deg"></div><div class="petal" style="--angle:30deg"></div>
+        <div class="petal" style="--angle:60deg"></div><div class="petal" style="--angle:90deg"></div>
+        <div class="petal" style="--angle:120deg"></div><div class="petal" style="--angle:150deg"></div>
+        <div class="petal" style="--angle:180deg"></div><div class="petal" style="--angle:210deg"></div>
+        <div class="petal" style="--angle:240deg"></div><div class="petal" style="--angle:270deg"></div>
+        <div class="petal" style="--angle:300deg"></div><div class="petal" style="--angle:330deg"></div>
+        <div class="seed-center"></div>
+    </div>
+</div>
+
+</div>
+
+<div class="particle" style="left:10%;top:70%"></div>
+<div class="particle" style="left:20%;top:55%;animation-delay:1s"></div>
+<div class="particle" style="left:30%;top:65%;animation-delay:2s"></div>
+<div class="particle" style="left:45%;top:50%;animation-delay:3s"></div>
+<div class="particle" style="left:60%;top:65%;animation-delay:1s"></div>
+<div class="particle" style="left:72%;top:45%;animation-delay:2s"></div>
+<div class="particle" style="left:85%;top:65%;animation-delay:3s"></div>
+
+<div id="heart-section">
+    <canvas id="heart-canvas"></canvas>
+    <div id="birthday-text-flower">Happy Birthday Gilli Jii ❤️</div>
+    <button id="continueBtnFlower" class="stage-continue-btn" onclick="goToSiteStage()">Continue →</button>
+</div>
+
+</div>
+</div>
+
+<!-- ==================================================
+     STAGE 2 — THREE.JS PARTICLE HEART
+================================================== -->
+<div id="stageHeartFS">
+    <div id="birthday-text-fs">Once again, many many happy returns of the day 🎂</div>
+    <svg class="svg" viewBox="0 0 1000 1000" style="display: none;">
+        <path id="path" d="M 500,300 C 400,150 150,200 150,450 C 150,700 500,850 500,850 C 500,850 850,700 850,450 C 850,200 600,150 500,300 Z" />
+    </svg>
+</div>
+
+<!-- ==================================================
+     STAGE 3 — MAIN SITE
+================================================== -->
+<div id="stageSite">
+
+<div class="floating-hearts">
+    <span>❤️</span><span>💕</span><span>💗</span><span>💖</span><span>✨</span>
+</div>
+
+<nav class="topnav">
+    <button onclick="showPage('page1')">Home</button>
+    <button onclick="showPage('page2')">Letter</button>
+    <button onclick="showPage('pageCake')">Celebrate</button>
+    <button onclick="showPage('pageMoments')">Moments</button>
+</nav>
+
+<section id="page1" class="page active">
+<div class="background"></div>
+<div class="container">
+    <div class="hero-grid">
+        <div class="hero-content">
+            <div class="eyebrow">A Special Surprise For You</div>
+            <h1 class="hero-title">Happy<br>Birthday</h1>
+            <div class="hero-name">My Gilli ❤️</div>
+            <p class="hero-description">
+                Is dafferrr ki taraf se ek goluu moluuu, motiii se chotii teddy bear ko  many many Happy Birthday! 🎂🧸❤️
+
+                <br><br>
+                Is saal tum hamesha khush raho, bohat bohat masti karo, aur saari tensions door raho or har week miloo . ❤️
+            </p>
+            <button class="btn" onclick="showPage('page2')">Open Your Surprise 🎁</button>
+        </div>
+        <div class="hero-image">
+           <div class="image-frame">
+    <video id="heroVideo" autoplay muted loop playsinline>
+        <source src="./image/video.mp4" type="video/mp4">
+    </video>
+</div>
+        </div>
+    </div>
+</div>
+</section>
+
+<section id="page2" class="page">
+<div class="background"></div>
+<div class="container">
+    <div class="letter-grid">
+        <div class="letter-image"><img src="./image/heroo.jpeg" alt="Us"></div>
+        <div class="letter-text">
+            <h2>Happy Birthday<br>My Gilli ❤️</h2>
+            <p>
+                Today is not just another day.
+                <br><br>
+                Today is the birthday of the most special person in my life. 🥺❤️
+                <br><br>
+               
+                I hope your birthday is as beautiful and special as you are.
+                <br><br>
+                But wait... there's more. 💕
+            </p>
+            <button class="btn" onclick="showPage('pageCake')">Let's Celebrate 🎂</button>
+        </div>
+    </div>
+</div>
+</section>
+
+<section id="pageMoments" class="page">
+<div class="background"></div>
+<div class="container">
+    <div class="moments-wrapper">
+        <div class="eyebrow center">Little Pieces Of Us</div>
+        <div class="lights-heart" aria-hidden="true">
+                <span class="bulb" style="left:100.00%; top:27.33%; --c:#ff5d94; animation-delay:0.0s;"></span>
+                <span class="bulb" style="left:98.18%; top:37.69%; --c:#ffd54a; animation-delay:0.075s;"></span>
+                <span class="bulb" style="left:93.01%; top:47.74%; --c:#ff3399; animation-delay:0.15s;"></span>
+                <span class="bulb" style="left:85.37%; top:57.19%; --c:#b76cff; animation-delay:0.225s;"></span>
+                <span class="bulb" style="left:76.48%; top:66.05%; --c:#ff8a5b; animation-delay:0.3s;"></span>
+                <span class="bulb" style="left:67.68%; top:74.42%; --c:#5fd0ff; animation-delay:0.375s;"></span>
+                <span class="bulb" style="left:60.15%; top:82.25%; --c:#ff5d94; animation-delay:0.45s;"></span>
+                <span class="bulb" style="left:54.68%; top:89.27%; --c:#ffd54a; animation-delay:0.525s;"></span>
+                <span class="bulb" style="left:51.48%; top:94.96%; --c:#ff3399; animation-delay:0.6s;"></span>
+                <span class="bulb" style="left:50.19%; top:98.69%; --c:#b76cff; animation-delay:0.675s;"></span>
+                <span class="bulb" style="left:50.00%; top:100.00%; --c:#ff8a5b; animation-delay:0.75s;"></span>
+                <span class="bulb" style="left:49.81%; top:98.69%; --c:#5fd0ff; animation-delay:0.825s;"></span>
+                <span class="bulb" style="left:48.52%; top:94.96%; --c:#ff5d94; animation-delay:0.9s;"></span>
+                <span class="bulb" style="left:45.32%; top:89.27%; --c:#ffd54a; animation-delay:0.975s;"></span>
+                <span class="bulb" style="left:39.85%; top:82.25%; --c:#ff3399; animation-delay:1.05s;"></span>
+                <span class="bulb" style="left:32.32%; top:74.42%; --c:#b76cff; animation-delay:1.125s;"></span>
+                <span class="bulb" style="left:23.52%; top:66.05%; --c:#ff8a5b; animation-delay:1.2s;"></span>
+                <span class="bulb" style="left:14.63%; top:57.19%; --c:#5fd0ff; animation-delay:1.275s;"></span>
+                <span class="bulb" style="left:6.99%; top:47.74%; --c:#ff5d94; animation-delay:1.35s;"></span>
+                <span class="bulb" style="left:1.82%; top:37.69%; --c:#ffd54a; animation-delay:1.425s;"></span>
+                <span class="bulb" style="left:0.00%; top:27.33%; --c:#ff3399; animation-delay:1.5s;"></span>
+                <span class="bulb" style="left:1.82%; top:17.34%; --c:#b76cff; animation-delay:1.575s;"></span>
+                <span class="bulb" style="left:6.99%; top:8.74%; --c:#ff8a5b; animation-delay:1.65s;"></span>
+                <span class="bulb" style="left:14.63%; top:2.67%; --c:#5fd0ff; animation-delay:1.725s;"></span>
+                <span class="bulb" style="left:23.52%; top:0.00%; --c:#ff5d94; animation-delay:1.8s;"></span>
+                <span class="bulb" style="left:32.32%; top:1.01%; --c:#ffd54a; animation-delay:1.875s;"></span>
+                <span class="bulb" style="left:39.85%; top:5.18%; --c:#ff3399; animation-delay:1.95s;"></span>
+                <span class="bulb" style="left:45.32%; top:11.27%; --c:#b76cff; animation-delay:2.025s;"></span>
+                <span class="bulb" style="left:48.52%; top:17.52%; --c:#ff8a5b; animation-delay:2.1s;"></span>
+                <span class="bulb" style="left:49.81%; top:22.16%; --c:#5fd0ff; animation-delay:2.175s;"></span>
+                <span class="bulb" style="left:50.00%; top:23.87%; --c:#ff5d94; animation-delay:2.25s;"></span>
+                <span class="bulb" style="left:50.19%; top:22.16%; --c:#ffd54a; animation-delay:2.325s;"></span>
+                <span class="bulb" style="left:51.48%; top:17.52%; --c:#ff3399; animation-delay:2.4s;"></span>
+                <span class="bulb" style="left:54.68%; top:11.27%; --c:#b76cff; animation-delay:2.475s;"></span>
+                <span class="bulb" style="left:60.15%; top:5.18%; --c:#ff8a5b; animation-delay:2.55s;"></span>
+                <span class="bulb" style="left:67.68%; top:1.01%; --c:#5fd0ff; animation-delay:2.625s;"></span>
+                <span class="bulb" style="left:76.48%; top:0.00%; --c:#ff5d94; animation-delay:2.7s;"></span>
+                <span class="bulb" style="left:85.37%; top:2.67%; --c:#ffd54a; animation-delay:2.775s;"></span>
+                <span class="bulb" style="left:93.01%; top:8.74%; --c:#ff3399; animation-delay:2.85s;"></span>
+                <span class="bulb" style="left:98.18%; top:17.34%; --c:#b76cff; animation-delay:2.925s;"></span>
+        </div>
+        <h2 class="moments-heading">Moments We'll Cherish</h2>
+        <p class="moments-sub">A few of the memories closest to my heart — every one of them is a reason to smile.</p>
+       
+       
+       
+       <div class="moments-grid" id="momentsGrid">
+
+    <figure>
+        <img src="./image/fist.png" alt="Memory one">
+    </figure>
+
+    <figure>
+        <img src="./image/moment (1).JPG" alt="Memory two">
+    </figure>
+
+    <figure>
+        <img src="./image/Page4.JPG" alt="Memory three">
+    </figure>
+      <figure>
+        <img src="./image/moment (2).JPG" alt="Memory one">
+    </figure>
+      <figure>
+        <img src="./image/moment (3).JPG" alt="Memory one">
+    </figure>
+      <figure>
+        <img src="./image/moment (4).JPG" alt="Memory one">
+    </figure>
+
+</div>
+
+
+        
+        <div style="margin-top:50px;">
+            <button class="btn" onclick="showPage('page3')">One More Thing... 🥺</button>
+        </div>
+    </div>
+</div>
+</section>
+
+<section id="pageCake" class="page">
+<div class="background"></div>
+<div class="container">
+    <div class="cake-wrapper">
+        <div class="cake-card">
+            <div class="eyebrow center">One More Year Of You</div>
+            <h2 class="cake-title">Close Your Eyes & Wish</h2>
+            <p class="cake-sub">Tap the button to blow out the candles...</p>
+            <div class="cake" id="cake">
+                <div class="candles">
+                    <div class="candle"><div class="flame"></div></div>
+                    <div class="candle"><div class="flame"></div></div>
+                    <div class="candle"><div class="flame"></div></div>
+                </div>
+                <div class="tier tier1"></div>
+                <div class="tier tier2"></div>
+                <div class="tier tier3"></div>
+            </div>
+            <button class="btn" id="blowBtn" onclick="blowCandles()">Blow The Candles 💨</button>
+            <div class="wish-reveal" id="wishReveal">✨ Wish made — the magic is real ✨</div>
+            <div style="margin-top:34px;">
+                <button class="btn ghost" onclick="showPage('pageMoments')">See Our Moments 📸</button>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<section id="page3" class="page">
+<div class="background"></div>
+<div class="container">
+    <div class="question-wrapper">
+        <div class="question-card">
+            <img class="question-image" src="./image/Meet.JPG" alt="Love">
+            <div class="question-label">A Special Question</div>
+            <h2 class="question">Can I see you<br><span>today?</span> 🥺</h2>
+            <div class="buttons-area" id="buttonsArea">
+                <button class="yes-btn" onclick="sayYes()">Yes 😊❤️</button>
+                <button class="no-btn" id="noButton">No 😢</button>
+            </div>
+            <div class="hint">Catch the No button if you can 😜</div>
+        </div>
+    </div>
+</div>
+</section>
+
+<section id="finalPage" class="page">
+<div class="background"></div>
+<div class="container">
+    <div class="final-wrapper">
+        <div class="final-image"><img src="./image/Page4.JPG" alt="Love"></div>
+        <div class="final-content">
+            <div class="final-heart">❤️</div>
+            <h1 class="final-title">Yaaaay! 🥳</h1>
+            <p class="final-message">
+                I knew you would say YES! 🥺❤️
+                <br><br>
+                Once again, many many happy returns of the day, my beautiful Gilli! 🎂🎉
+                <br><br>
+                Today is going to be our special day. I can't wait to see you! ❤️
+                <br><br>
+                You mean more to me than words can ever explain. 💕
+            </p>
+            <div class="final-tag">Made with infinite love ✦ 2026</div>
+            <div style="margin-top:30px;">
+                <button class="btn" onclick="goToFinaleHeart()">One Last Thing For You ❤️</button>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script>
+
+/* ==================================================
+   STAGE TRANSITIONS
+================================================== */
+function goToSiteStage(){
+    document.body.classList.remove('mode-flower');
+    document.body.classList.remove('mode-heart');
+    document.body.classList.add('mode-site');
+    showPage('page1');
+}
+function goToFinaleHeart(){
+    document.body.classList.remove('mode-site');
+    document.body.classList.add('mode-heart');
+    initThreeHeart();
+}
+
+/* ==================================================
+   STAGE 1 — FLOWER, THEN CANVAS HEART
+================================================== */
+setTimeout(function(){
+    const heartSection = document.getElementById("heart-section");
+    heartSection.classList.add("show");
+    startHeart();
+}, 5000);
+
+function startHeart(){
+    const canvas = document.getElementById("heart-canvas");
+    const ctx = canvas.getContext("2d");
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    const width = canvas.width;
+    const height = canvas.height;
+    const particles = [];
+    const total = 2200;
+    const scale = Math.min(width, height) / 38;
+
+    for (let i = 0; i < total; i++) {
+        const t = Math.random() * Math.PI * 2;
+        const heartX = 16 * Math.pow(Math.sin(t), 3);
+        const heartY = 13 * Math.cos(t) - 5 * Math.cos(2 * t) - 2 * Math.cos(3 * t) - Math.cos(4 * t);
+        const fill = Math.sqrt(Math.random());
+        const targetX = width / 2 + heartX * scale * fill;
+        const targetY = height / 2 - heartY * scale * fill;
+
+        particles.push({
+            x: Math.random() * width,
+            y: Math.random() * height,
+            targetX: targetX,
+            targetY: targetY,
+            size: Math.random() * 2 + 0.5,
+            speed: 0.015 + Math.random() * 0.02
+        });
+    }
+
+    let startTime = performance.now();
+
+    function animateFlowerHeart(){
+        requestAnimationFrame(animateFlowerHeart);
+
+        ctx.fillStyle = "rgba(0,0,0,.16)";
+        ctx.fillRect(0, 0, width, height);
+
+        const time = (performance.now() - startTime) / 1000;
+
+        particles.forEach(function(p){
+            const dx = p.targetX - p.x;
+            const dy = p.targetY - p.y;
+            p.x += dx * p.speed;
+            p.y += dy * p.speed;
+
+            ctx.beginPath();
+            ctx.fillStyle = "rgba(255,70,170,.9)";
+            ctx.shadowBlur = 12;
+            ctx.shadowColor = "#ff1493";
+            ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+            ctx.fill();
+        });
+
+        if (time >= 5.5) {
+            const text = document.getElementById("birthday-text-flower");
+            if (!text.classList.contains("show")) { text.classList.add("show"); }
+            const btn = document.getElementById("continueBtnFlower");
+            if (btn && !btn.classList.contains("show")) { btn.classList.add("show"); }
+        }
+    }
+
+    animateFlowerHeart();
+}
+
+/* ==================================================
+   STAGE 2 — THREE.JS PARTICLE HEART (lazy init)
+================================================== */
+let heartInited = false;
+function initThreeHeart(){
+    if (heartInited) return;
+    heartInited = true;
+
+    const wrapper = document.getElementById('stageHeartFS');
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    const renderer = new THREE.WebGLRenderer({ antialias: true });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.domElement.style.position = 'absolute';
+    renderer.domElement.style.top = '0';
+    renderer.domElement.style.left = '0';
+    wrapper.appendChild(renderer.domElement);
+
+    camera.position.z = 1000;
+
+    const t1 = gsap.timeline({ repeat: -1, yoyo: true });
+
+    const path = document.querySelector("#path");
+    const length = path.getTotalLength();
+    const vertices = [];
+    const heartScale = 1.35;
+
+    for (let i = 0; i < length; i += 3) {
+        const point = path.getPointAtLength(i);
+        const baseTargetX = (point.x - 500) * heartScale;
+        const baseTargetY = (-point.y + 500) * heartScale;
+
+        for (let j = 0; j < 4; j++) {
+            const offsetX = (Math.random() - 0.5) * 22;
+            const offsetY = (Math.random() - 0.5) * 22;
+            const offsetZ = (Math.random() - 0.5) * 15;
+            const targetX = baseTargetX + offsetX;
+            const targetY = baseTargetY + offsetY;
+            const targetZ = offsetZ;
+            const startX = targetX + (Math.random() - 0.5) * 500;
+            const startY = targetY + (Math.random() - 0.5) * 500;
+            const startZ = (Math.random() - 0.5) * 500;
+
+            const vector = new THREE.Vector3(startX, startY, startZ);
+            vertices.push(vector);
+
+            t1.to(vector, {
+                x: targetX, y: targetY, z: targetZ,
+                ease: "power2.inOut", duration: 3,
+            }, i * 0.0015);
+        }
+    }
+
+    t1.to("#birthday-text-fs", { opacity: 1, duration: 0.5, ease: "power2.inOut" }, 2.5);
+
+    const geometry = new THREE.BufferGeometry().setFromPoints(vertices);
+    const material = new THREE.PointsMaterial({
+        color: 0xff3399, size: 3, transparent: true, opacity: 0.85, blending: THREE.AdditiveBlending
+    });
+    const points = new THREE.Points(geometry, material);
+    scene.add(points);
+
+    function animateThreeHeart(){
+        requestAnimationFrame(animateThreeHeart);
+        const positionAttribute = geometry.attributes.position;
+        for (let i = 0; i < vertices.length; i++) {
+            positionAttribute.setXYZ(i, vertices[i].x, vertices[i].y, vertices[i].z);
+        }
+        positionAttribute.needsUpdate = true;
+        renderer.render(scene, camera);
+    }
+    animateThreeHeart();
+
+    window.addEventListener('resize', () => {
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+    });
+}
+
+/* ==================================================
+   STAGE 3 — MAIN SITE
+================================================== */
+function showPage(pageId) {
+    document.querySelectorAll(".page").forEach(p => p.classList.remove("active"));
+    document.getElementById(pageId).classList.add("active");
+    window.scrollTo(0, 0);
+    if (pageId === "pageMoments") playMomentsAnimation();
+}
+
+function playMomentsAnimation() {
+    const el = document.getElementById("momentsGrid");
+    el.classList.remove("play");
+    void el.offsetWidth; /* force reflow so animation restarts every time */
+    el.classList.add("play");
+}
+
+function blowCandles() {
+    const cake = document.getElementById("cake");
+    const reveal = document.getElementById("wishReveal");
+    const btn = document.getElementById("blowBtn");
+    cake.classList.add("blown");
+    reveal.classList.add("show");
+    btn.disabled = true;
+    btn.style.opacity = ".5";
+    btn.style.cursor = "default";
+}
+
+const noButton = document.getElementById("noButton");
+const buttonsArea = document.getElementById("buttonsArea");
+
+function moveNoButton() {
+    const areaWidth = buttonsArea.clientWidth;
+    const areaHeight = buttonsArea.clientHeight;
+    const buttonWidth = noButton.offsetWidth;
+    const buttonHeight = noButton.offsetHeight;
+    const maxX = areaWidth - buttonWidth;
+    const maxY = areaHeight - buttonHeight;
+    const randomX = Math.random() * Math.max(0, maxX);
+    const randomY = Math.random() * Math.max(0, maxY);
+    noButton.style.position = "absolute";
+    noButton.style.left = randomX + "px";
+    noButton.style.top = randomY + "px";
+}
+
+noButton.addEventListener("mouseenter", moveNoButton);
+noButton.addEventListener("touchstart", function(event) {
+    event.preventDefault();
+    moveNoButton();
+});
+
+function sayYes() {
+    showPage("finalPage");
+    createConfetti();
+}
+
+function createConfetti() {
+    const emojis = ["❤️", "💕", "💖", "✨", "🎉", "🥳", "🎂"];
+    for (let i = 0; i < 100; i++) {
+        const confetti = document.createElement("div");
+        confetti.className = "confetti";
+        confetti.innerHTML = emojis[Math.floor(Math.random() * emojis.length)];
+        confetti.style.left = Math.random() * 100 + "vw";
+        confetti.style.animationDuration = (2 + Math.random() * 4) + "s";
+        confetti.style.animationDelay = (Math.random() * 2) + "s";
+        document.body.appendChild(confetti);
+        setTimeout(() => confetti.remove(), 7000);
+    }
+}
+
+function playMomentsAnimation() { 
+    const el = document.getElementById("momentsGrid"); 
+    el.classList.remove("play"); 
+    void el.offsetWidth;
+    el.classList.add("play"); 
+}
+
+</script>
+</body>
+</html>
